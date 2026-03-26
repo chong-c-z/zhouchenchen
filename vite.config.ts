@@ -3,8 +3,6 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
-});
+  base: '/zhouchenchen/', // 关键：必须与你的仓库名一致
+  // ... 其他配置
+})
